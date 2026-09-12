@@ -1,0 +1,25 @@
+version: '0'  
+
+app1:
+    container_name: app1
+    build: ./api
+    ports:
+      - "3000:3000"
+    environment:
+      - MESSAGE="Hola Diego Rodriguez Becerra"
+
+app2:
+    container_name: app2
+    build: ./api
+    ports:
+      - "3001:3000"
+    environment:
+      - MESSAGE="Hola Diego Rodriguez Becerra, desde la app 2"
+
+app3:
+    container_name: app3
+    build: ./api
+    ports:
+      - "3002:3000"
+    environment:
+      - MESSAGE="Hola Diego Rodriguez Becerra desde la app 3"
