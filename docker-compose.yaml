@@ -1,5 +1,5 @@
-
 services:
+
   app1:
     container_name: app1
     build: ./api
@@ -23,3 +23,22 @@ services:
       - "3002:3000"
     environment:
       - MESSAGE=${MESSAGE}
+
+  db:
+    image: postgres:16
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: lab02_db
+    volumes:
+      - lab02_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  lab02_data:
