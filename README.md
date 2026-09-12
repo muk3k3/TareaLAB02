@@ -19,6 +19,23 @@ postgres
 # Indicaciones
 ## Comandos
 
+Empezamos instalando el api que se nos indico en clase "hello-world-api"
+```bash
+docker pull nmatsui/hello-world-api
+```
+
+
+Y clonamos las demas carpetas como el .gitignore, Dockerfile, config.js
+```bash
+git clone https://github.com/nmatsui/hello-world-api.git
+```
+
+
+Ejecutamos el contenedor 
+```bash
+docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
+```
+
 
 ```bash
 docker compose up -d
