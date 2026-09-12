@@ -38,7 +38,7 @@ docker pull nmatsui/hello-world-api
 ```
 
 
-Y clonamos las demas carpetas como el .gitignore, Dockerfile, config.js
+Y clonamos las demas carpetas como el server.js, Dockerfile, config.js,etc.
 ```bash
 git clone https://github.com/nmatsui/hello-world-api.git
 ```
@@ -66,10 +66,11 @@ curl.exe -i http://localhost:3001/
 curl.exe -i http://localhost:3002/
 ```
 
+Adicionalmente se crearon los archivos .gitignore, .env, .env.example y docker-compose.yaml
 
 ## Configuración por entorno
 ```
-MESSAGE= Tarea de Laboratorio Semana 02/Rodriguez Becerra Diego Arturo/#000291000
+MESSAGE= Hola Diego Rodriguez Becerra desde env
 ```
 # Creditos
 - Rodriguez Becerra Diego Arturo
